@@ -277,8 +277,8 @@ def decompile_fern_flower(decompiled_version, version, side, quiet, force):
         path = path.resolve()
         fernflower = fernflower.resolve()
         subprocess.run(['java',
-                        '-Xmx2G',
-                        '-Xms1G',
+                        '-Xmx4G',
+                        '-Xms3G',
                         '-jar', fernflower.__str__(),
                         '-hes=0',  # hide empty super invocation deactivated (might clutter but allow following)
                         '-hdc=0',  # hide empty default constructor deactivated (allow to track)
